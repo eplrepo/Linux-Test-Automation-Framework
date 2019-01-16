@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/usb_debug.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/serial/usb_debug.ko drivers/usb/serial/usb_debug.o drivers/usb/serial/usb_debug.mod.o ;  true

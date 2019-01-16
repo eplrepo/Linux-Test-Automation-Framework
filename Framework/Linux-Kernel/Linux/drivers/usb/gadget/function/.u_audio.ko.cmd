@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/function/u_audio.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/gadget/function/u_audio.ko drivers/usb/gadget/function/u_audio.o drivers/usb/gadget/function/u_audio.mod.o ;  true

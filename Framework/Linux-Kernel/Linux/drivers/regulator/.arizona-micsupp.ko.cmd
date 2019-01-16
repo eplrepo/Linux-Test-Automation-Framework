@@ -1,0 +1,1 @@
+cmd_drivers/regulator/arizona-micsupp.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/regulator/arizona-micsupp.ko drivers/regulator/arizona-micsupp.o drivers/regulator/arizona-micsupp.mod.o ;  true

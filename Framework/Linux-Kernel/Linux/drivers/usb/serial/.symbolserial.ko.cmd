@@ -1,0 +1,1 @@
+cmd_drivers/usb/serial/symbolserial.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/usb/serial/symbolserial.ko drivers/usb/serial/symbolserial.o drivers/usb/serial/symbolserial.mod.o ;  true

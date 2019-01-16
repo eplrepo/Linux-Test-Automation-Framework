@@ -1,0 +1,7 @@
+/* Generated automatically. */
+static const char configuration_arguments[] = "./configure --prefix=/home/epl/Jan_7/Linux-Test-Framework/output/host --sysconfdir=/home/epl/Jan_7/Linux-Test-Framework/output/host/etc --enable-static --target=arm-buildroot-linux-uclibcgnueabihf --with-sysroot=/home/epl/Jan_7/Linux-Test-Framework/output/host/arm-buildroot-linux-uclibcgnueabihf/sysroot --disable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --with-gmp=/home/epl/Jan_7/Linux-Test-Framework/output/host --with-mpc=/home/epl/Jan_7/Linux-Test-Framework/output/host --with-mpfr=/home/epl/Jan_7/Linux-Test-Framework/output/host --with-pkgversion='Buildroot 2018.02.1-g1c99f2c' --with-bugurl=http://bugs.buildroot.net/ --disable-libquadmath --disable-libsanitizer --enable-tls --disable-libmudflap --enable-threads --without-isl --without-cloog --disable-decimal-float --with-abi=aapcs-linux --with-cpu=cortex-a7 --with-fpu=neon-vfpv4 --with-float=hard --with-mode=arm --enable-languages=c,c++ --with-build-time-tools=/home/epl/Jan_7/Linux-Test-Framework/output/host/arm-buildroot-linux-uclibcgnueabihf/bin --enable-shared --disable-libgomp";
+static const char thread_model[] = "posix";
+
+static const struct {
+  const char *name, *value;
+} configure_default_options[] = { { "abi", "aapcs-linux" }, { "cpu", "cortex-a7" }, { "float", "hard" }, { "mode", "arm" }, { "fpu", "neon-vfpv4" }, { "tls", "gnu" } };

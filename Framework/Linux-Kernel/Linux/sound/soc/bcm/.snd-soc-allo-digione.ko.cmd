@@ -1,0 +1,1 @@
+cmd_sound/soc/bcm/snd-soc-allo-digione.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o sound/soc/bcm/snd-soc-allo-digione.ko sound/soc/bcm/snd-soc-allo-digione.o sound/soc/bcm/snd-soc-allo-digione.mod.o ;  true

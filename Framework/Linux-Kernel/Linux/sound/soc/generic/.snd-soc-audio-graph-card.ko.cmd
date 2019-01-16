@@ -1,0 +1,1 @@
+cmd_sound/soc/generic/snd-soc-audio-graph-card.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o sound/soc/generic/snd-soc-audio-graph-card.ko sound/soc/generic/snd-soc-audio-graph-card.o sound/soc/generic/snd-soc-audio-graph-card.mod.o ;  true

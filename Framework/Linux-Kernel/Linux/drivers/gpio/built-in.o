@@ -1,0 +1,20 @@
+!<thin>
+//                                              136       `
+devres.o/
+gpiolib.o/
+gpiolib-legacy.o/
+gpiolib-devprop.o/
+gpiolib-of.o/
+gpiolib-sysfs.o/
+gpio-bcm-exp.o/
+gpio-bcm-virt.o/
+gpio-stmpe.o/
+/0              0           0     0     644     15024     `
+/10             0           0     0     644     99836     `
+/21             0           0     0     644     6844      `
+/39             0           0     0     644     2776      `
+/58             0           0     0     644     11152     `
+/72            /0           0     0     644     16780     `
+/89             0           0     0     644     7932      `
+/105           /0           0     0     644     9380      `
+/122            0           0     0     644     11248     `

@@ -1,0 +1,1 @@
+cmd_drivers/regulator/fixed.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/regulator/fixed.ko drivers/regulator/fixed.o drivers/regulator/fixed.mod.o ;  true

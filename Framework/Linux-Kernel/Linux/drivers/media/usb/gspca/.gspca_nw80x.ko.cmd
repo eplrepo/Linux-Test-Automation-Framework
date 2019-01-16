@@ -1,0 +1,1 @@
+cmd_drivers/media/usb/gspca/gspca_nw80x.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/usb/gspca/gspca_nw80x.ko drivers/media/usb/gspca/gspca_nw80x.o drivers/media/usb/gspca/gspca_nw80x.mod.o ;  true

@@ -1,0 +1,1 @@
+cmd_drivers/net/ethernet/qualcomm/qcaspi.o := arm-buildroot-linux-uclibcgnueabihf-ld -EL    -r -o drivers/net/ethernet/qualcomm/qcaspi.o drivers/net/ethernet/qualcomm/qca_7k.o drivers/net/ethernet/qualcomm/qca_debug.o drivers/net/ethernet/qualcomm/qca_spi.o 

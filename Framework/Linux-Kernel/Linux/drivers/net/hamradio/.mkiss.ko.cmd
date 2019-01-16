@@ -1,0 +1,1 @@
+cmd_drivers/net/hamradio/mkiss.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/net/hamradio/mkiss.ko drivers/net/hamradio/mkiss.o drivers/net/hamradio/mkiss.mod.o ;  true

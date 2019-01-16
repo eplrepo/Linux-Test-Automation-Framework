@@ -1,0 +1,1 @@
+cmd_drivers/i2c/busses/built-in.o :=  rm -f drivers/i2c/busses/built-in.o; arm-buildroot-linux-uclibcgnueabihf-ar rcSTPD drivers/i2c/busses/built-in.o drivers/i2c/busses/i2c-bcm2708.o drivers/i2c/busses/i2c-bcm2835.o drivers/i2c/busses/i2c-gpio.o drivers/i2c/busses/i2c-robotfuzz-osif.o drivers/i2c/busses/i2c-tiny-usb.o 

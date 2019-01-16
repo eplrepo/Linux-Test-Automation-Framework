@@ -1,0 +1,1 @@
+cmd_sound/soc/bcm/snd-soc-allo-katana-codec.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o sound/soc/bcm/snd-soc-allo-katana-codec.ko sound/soc/bcm/snd-soc-allo-katana-codec.o sound/soc/bcm/snd-soc-allo-katana-codec.mod.o ;  true

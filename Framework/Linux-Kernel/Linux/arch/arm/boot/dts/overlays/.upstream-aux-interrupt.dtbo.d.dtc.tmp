@@ -1,0 +1,1 @@
+arch/arm/boot/dts/overlays/upstream-aux-interrupt.dtbo: arch/arm/boot/dts/overlays/.upstream-aux-interrupt.dtbo.dts.tmp

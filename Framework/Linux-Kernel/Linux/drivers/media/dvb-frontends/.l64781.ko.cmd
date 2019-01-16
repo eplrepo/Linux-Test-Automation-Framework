@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/l64781.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/l64781.ko drivers/media/dvb-frontends/l64781.o drivers/media/dvb-frontends/l64781.mod.o ;  true

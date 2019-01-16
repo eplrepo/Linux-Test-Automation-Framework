@@ -1,0 +1,1 @@
+cmd_drivers/gpio/gpio-mockup.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/gpio/gpio-mockup.ko drivers/gpio/gpio-mockup.o drivers/gpio/gpio-mockup.mod.o ;  true

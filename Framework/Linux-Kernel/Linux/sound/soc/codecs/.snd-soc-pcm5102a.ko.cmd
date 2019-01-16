@@ -1,0 +1,1 @@
+cmd_sound/soc/codecs/snd-soc-pcm5102a.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o sound/soc/codecs/snd-soc-pcm5102a.ko sound/soc/codecs/snd-soc-pcm5102a.o sound/soc/codecs/snd-soc-pcm5102a.mod.o ;  true

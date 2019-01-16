@@ -1,0 +1,2 @@
+upstream-aux-interrupt-overlay.o: \
+ arch/arm/boot/dts/overlays/upstream-aux-interrupt-overlay.dts

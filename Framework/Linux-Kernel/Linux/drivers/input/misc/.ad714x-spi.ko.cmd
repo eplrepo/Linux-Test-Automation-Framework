@@ -1,0 +1,1 @@
+cmd_drivers/input/misc/ad714x-spi.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/input/misc/ad714x-spi.ko drivers/input/misc/ad714x-spi.o drivers/input/misc/ad714x-spi.mod.o ;  true

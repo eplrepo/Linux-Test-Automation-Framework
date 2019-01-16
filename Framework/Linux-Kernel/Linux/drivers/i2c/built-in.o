@@ -1,0 +1,32 @@
+!<thin>
+//                                              292       `
+i2c-boardinfo.o/
+i2c-core-base.o/
+i2c-core-smbus.o/
+i2c-core-slave.o/
+i2c-core-of.o/
+i2c-dev.o/
+i2c-mux.o/
+algos/i2c-algo-bit.o/
+busses/i2c-bcm2708.o/
+busses/i2c-bcm2835.o/
+busses/i2c-gpio.o/
+busses/i2c-robotfuzz-osif.o/
+busses/i2c-tiny-usb.o/
+muxes/i2c-mux-gpmux.o/
+muxes/i2c-mux-pca954x.o/
+/0             /0           0     0     644     5656      `
+/17            /0           0     0     644     73844     `
+/34             0           0     0     644     32444     `
+/52             0           0     0     644     6508      `
+/70             0           0     0     644     9580      `
+/85             0           0     0     644     15152     `
+/96             0           0     0     644     11732     `
+/107            0           0     0     644     15188     `
+/129            0           0     0     644     11764     `
+/151            0           0     0     644     12920     `
+/173            0           0     0     644     9244      `
+/192            0           0     0     644     7376      `
+/221            0           0     0     644     9392      `
+/244           /0           0     0     644     7644      `
+/267            0           0     0     644     11636     `

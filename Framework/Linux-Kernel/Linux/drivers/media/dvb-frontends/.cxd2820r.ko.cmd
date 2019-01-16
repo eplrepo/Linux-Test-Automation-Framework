@@ -1,0 +1,1 @@
+cmd_drivers/media/dvb-frontends/cxd2820r.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/dvb-frontends/cxd2820r.ko drivers/media/dvb-frontends/cxd2820r.o drivers/media/dvb-frontends/cxd2820r.mod.o ;  true

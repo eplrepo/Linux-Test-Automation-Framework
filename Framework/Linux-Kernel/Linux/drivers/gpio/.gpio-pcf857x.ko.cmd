@@ -1,0 +1,1 @@
+cmd_drivers/gpio/gpio-pcf857x.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/gpio/gpio-pcf857x.ko drivers/gpio/gpio-pcf857x.o drivers/gpio/gpio-pcf857x.mod.o ;  true

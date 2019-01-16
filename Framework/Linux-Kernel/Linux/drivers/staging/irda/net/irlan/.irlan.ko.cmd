@@ -1,0 +1,1 @@
+cmd_drivers/staging/irda/net/irlan/irlan.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/staging/irda/net/irlan/irlan.ko drivers/staging/irda/net/irlan/irlan.o drivers/staging/irda/net/irlan/irlan.mod.o ;  true

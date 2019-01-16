@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/marvell/mwifiex/mwifiex.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/net/wireless/marvell/mwifiex/mwifiex.ko drivers/net/wireless/marvell/mwifiex/mwifiex.o drivers/net/wireless/marvell/mwifiex/mwifiex.mod.o ;  true

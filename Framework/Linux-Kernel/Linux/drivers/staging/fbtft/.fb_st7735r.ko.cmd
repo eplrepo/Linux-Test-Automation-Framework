@@ -1,0 +1,1 @@
+cmd_drivers/staging/fbtft/fb_st7735r.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/staging/fbtft/fb_st7735r.ko drivers/staging/fbtft/fb_st7735r.o drivers/staging/fbtft/fb_st7735r.mod.o ;  true

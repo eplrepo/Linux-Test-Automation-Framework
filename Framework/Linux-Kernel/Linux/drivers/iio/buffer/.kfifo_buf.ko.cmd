@@ -1,0 +1,1 @@
+cmd_drivers/iio/buffer/kfifo_buf.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/iio/buffer/kfifo_buf.ko drivers/iio/buffer/kfifo_buf.o drivers/iio/buffer/kfifo_buf.mod.o ;  true

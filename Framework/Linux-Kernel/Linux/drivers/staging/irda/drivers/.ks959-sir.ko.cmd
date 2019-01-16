@@ -1,0 +1,1 @@
+cmd_drivers/staging/irda/drivers/ks959-sir.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/staging/irda/drivers/ks959-sir.ko drivers/staging/irda/drivers/ks959-sir.o drivers/staging/irda/drivers/ks959-sir.mod.o ;  true

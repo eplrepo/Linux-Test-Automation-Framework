@@ -1,0 +1,11 @@
+prefix=/home/epl/Jan_7/Linux-Test-Framework/output/host
+exec_prefix=/home/epl/Jan_7/Linux-Test-Framework/output/host
+libdir=/home/epl/Jan_7/Linux-Test-Framework/output/host/lib
+includedir=/home/epl/Jan_7/Linux-Test-Framework/output/host/include
+
+Name: mount
+Description: mount library
+Version: 2.31.1
+Requires.private: blkid
+Cflags: -I${includedir}/libmount
+Libs: -L${libdir} -lmount

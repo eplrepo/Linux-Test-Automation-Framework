@@ -1,0 +1,1 @@
+cmd_drivers/media/v4l2-core/v4l2-fwnode.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/media/v4l2-core/v4l2-fwnode.ko drivers/media/v4l2-core/v4l2-fwnode.o drivers/media/v4l2-core/v4l2-fwnode.mod.o ;  true

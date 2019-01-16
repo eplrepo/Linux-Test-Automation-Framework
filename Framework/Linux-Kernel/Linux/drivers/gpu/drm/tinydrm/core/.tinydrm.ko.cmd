@@ -1,0 +1,1 @@
+cmd_drivers/gpu/drm/tinydrm/core/tinydrm.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/gpu/drm/tinydrm/core/tinydrm.ko drivers/gpu/drm/tinydrm/core/tinydrm.o drivers/gpu/drm/tinydrm/core/tinydrm.mod.o ;  true

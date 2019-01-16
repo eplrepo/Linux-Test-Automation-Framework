@@ -1,0 +1,1 @@
+cmd_drivers/w1/slaves/w1_ds2438.ko := arm-buildroot-linux-uclibcgnueabihf-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/w1/slaves/w1_ds2438.ko drivers/w1/slaves/w1_ds2438.o drivers/w1/slaves/w1_ds2438.mod.o ;  true

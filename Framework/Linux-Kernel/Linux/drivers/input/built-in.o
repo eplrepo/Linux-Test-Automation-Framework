@@ -1,0 +1,16 @@
+!<thin>
+//                                              104       `
+input.o/
+input-compat.o/
+input-mt.o/
+ff-core.o/
+input-leds.o/
+mousedev.o/
+touchscreen/of_touchscreen.o/
+/0              0           0     0     644     59580     `
+/9              0           0     0     644     4996      `
+/25             0           0     0     644     13060     `
+/37             0           0     0     644     9820      `
+/48             0           0     0     644     7684      `
+/62             0           0     0     644     19876     `
+/74             0           0     0     644     6828      `
