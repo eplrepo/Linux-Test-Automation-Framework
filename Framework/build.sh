@@ -9,9 +9,9 @@
 
 echo "Compiler Set Up........"
 #Export Cross Compiler Path
-export PATH=$PWD/Cross-compiler/bin:$PATH
-export CROSS_COMPILE=arm-buildroot-linux-uclibcgnueabihf-
-export ARCH=arm
+#export PATH=$PWD/Cross-compiler/bin:$PATH
+#export CROSS_COMPILE=arm-buildroot-linux-uclibcgnueabihf-
+#export ARCH=arm
 
 
 #Build Kernel
@@ -110,6 +110,7 @@ cp -a Filesystem/rootfs.ext4 Binaries/rfs/
 cp -a Linux-Kernel/Linux/arch/arm/boot/zImage Binaries/boot/
 cp -a Linux-Kernel/Linux/arch/arm/boot/dts/bcm2709-rpi-2-b.dtb Binaries/boot/
 
+if [ 1 -eq 0 ]; then
 #copy zImage and its related binaries to Parition 1
 echo "Writing Boot Partition........"
 umount mntpt/
@@ -142,3 +143,4 @@ rm -rf Binaries/rfs/*
 rm -rf Binaries/boot/zImage
 rm -rf Binaries/boot/bcm2709-rpi-2-b.dtb
 rm -rf /usr/lib/ltp-testsuite
+fi
