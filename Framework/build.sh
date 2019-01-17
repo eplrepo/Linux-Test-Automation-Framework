@@ -9,9 +9,9 @@
 
 echo "Compiler Set Up........"
 #Export Cross Compiler Path
-#export PATH=$PWD/Cross-compiler/bin:$PATH
-#export CROSS_COMPILE=arm-buildroot-linux-uclibcgnueabihf-
-#export ARCH=arm
+export PATH=$PWD/Cross-compiler/bin:$PATH
+export CROSS_COMPILE=arm-buildroot-linux-uclibcgnueabihf-
+export ARCH=arm
 
 
 #Build Kernel
@@ -21,11 +21,11 @@ cd Linux-Kernel/Linux
 #cp Rasperri-Pi2-config .config
 #make distclean
 #cp test_framework_config .config
-#make
+make
 #Install Kernel Modules
 echo "Installing Kernel Modules........"
-#rm -rf lib/modules
-#make INSTALL_MOD_PATH=./ modules_install
+rm -rf lib/modules
+make INSTALL_MOD_PATH=./ modules_install
 cd ../../
 
 #Build LTP
