@@ -104,6 +104,8 @@ ApiVersion=$(cat mntpt/usr/version/release.txt | awk -F'.' '{print $3}' | awk -F
 ApiVersion=$((ApiVersion+1))
 echo "1.0.${ApiVersion}" > release.txt
 
+cp -a release.txt mntpt/usr/version/
+
 umount mntpt
 sync
 
