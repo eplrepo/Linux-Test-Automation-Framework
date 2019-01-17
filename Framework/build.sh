@@ -9,9 +9,9 @@
 
 echo "Compiler Set Up........"
 #Export Cross Compiler Path
-export PATH=$PWD/Cross-compiler/bin:$PATH
-export CROSS_COMPILE=arm-buildroot-linux-uclibcgnueabihf-
-export ARCH=arm
+#export PATH=$PWD/Cross-compiler/bin:$PATH
+#export CROSS_COMPILE=arm-buildroot-linux-uclibcgnueabihf-
+#export ARCH=arm
 
 
 #Build Kernel
@@ -21,11 +21,11 @@ cd Linux-Kernel/Linux
 #cp Rasperri-Pi2-config .config
 #make distclean
 #cp test_framework_config .config
-make
+#make
 #Install Kernel Modules
 echo "Installing Kernel Modules........"
-rm -rf lib/modules
-make INSTALL_MOD_PATH=./ modules_install
+#rm -rf lib/modules
+#make INSTALL_MOD_PATH=./ modules_install
 cd ../../
 
 #Build LTP
@@ -98,6 +98,12 @@ cp -a Build-Scripts/ChkForSwUpg.sh mntpt/root/swupg-scripts/
 cp -a Build-Scripts/NewBinaries.sh mntpt/root/swupg-scripts/
 cp -a Build-Scripts/SwUpg.sh mntpt/root/swupg-scripts/
 
+#compare the version infor in release.txt  from 
+#filesystem and increment the version 
+ApiVersion=$(cat mntpt/usr/version/release.txt | awk -F'.' '{print $3}' | awk -F '-' '{print $1}')
+ApiVersion=$((ApiVersion+1))
+echo "1.0.${ApiVersion}" > release.txt
+
 umount mntpt
 sync
 
@@ -136,6 +142,11 @@ umount mntpt
 sync
 
 #echo "SDCARD READY!!!!!"
+fi
+
+#copy the binaries to appropiate directories in host system
+cp -a Binaries /usr/src/
+cp -a release.txt /usr/src/
 
 #DElete binaries
 echo "Deleting Binaries Folder..."
@@ -143,4 +154,4 @@ rm -rf Binaries/rfs/*
 rm -rf Binaries/boot/zImage
 rm -rf Binaries/boot/bcm2709-rpi-2-b.dtb
 rm -rf /usr/lib/ltp-testsuite
-fi
+
