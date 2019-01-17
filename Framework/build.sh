@@ -152,8 +152,12 @@ sync
 fi
 
 #copy the binaries to appropiate directories in host system
-cp -a Binaries /usr/src/pi2
-cp -a release.txt /usr/src/pi2
+#Revisitr this
+cp -a Binaries/rfs/rootfs.ext2 /usr/src/pi2/
+cp -a Binaries/rfs/rootfs.ext4 /usr/src/pi2/
+cp -a Binaries/boot/zImage /usr/src/pi2/
+cp -a Binaries/boot/bcm2709-rpi-2-b.dtb /usr/src/pi2/
+cp -a release.txt /usr/src/pi2/
 
 #DElete binaries
 echo "Deleting Binaries Folder..."
