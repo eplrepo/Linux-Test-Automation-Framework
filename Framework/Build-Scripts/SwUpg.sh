@@ -29,8 +29,7 @@ if [ $value == 2 ]; then
         cp /tmp/bcm2709-rpi-2-b.dtb .                      
         cd /root                                           
         umount /mnt/                                       
-        sync       
-	cp -a /tmp/release.txt /usr/version/release.txt                                        
+        sync                                              
         echo "delete current files..."                     
         rm -Rf *                                           
         echo "reboot..."                                   
@@ -60,8 +59,7 @@ else
         cp /tmp/bcm2709-rpi-2-b.dtb .                      
         cd /root/                                          
         umount /mnt/                                       
-        sync 
-	cp -a /tmp/release.txt /usr/version/release.txt                                              
+        sync                                              
         echo "delete current files..."                     
         rm -Rf *                                           
         echo "reboot..."                                   
