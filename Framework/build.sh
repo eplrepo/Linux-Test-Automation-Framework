@@ -100,11 +100,16 @@ cp -a Build-Scripts/SwUpg.sh mntpt/root/swupg-scripts/
 
 #compare the version infor in release.txt  from 
 #filesystem and increment the version 
+echo "Updating version..."
 ApiVersion=$(cat mntpt/usr/version/release.txt | awk -F'.' '{print $3}' | awk -F '-' '{print $1}')
 ApiVersion=$((ApiVersion+1))
 echo "1.0.${ApiVersion}" > release.txt
+cat release.txt
 
+cat mntpt/usr/version/release.txt
+rm -rf mntpt/usr/version/*
 cp -a release.txt mntpt/usr/version/
+cat mntpt/usr/version/release.txt
 
 umount mntpt
 sync
