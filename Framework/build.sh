@@ -87,7 +87,7 @@ echo "Copying LTP test cases........"
 rm -rf mntpt/usr/lib/ltp-testsuite
 echo 
 cp -a /usr/lib/ltp-testsuite mntpt/usr/lib/
-cp -a test_cases/Test_Case_Set_1 mntpt/usr/lib/ltp-testsuite/runtest
+cp -a test-cases/Test_Case_Set_1 mntpt/usr/lib/ltp-testsuite/runtest
 
 
 #copy software upgrade related scripts
