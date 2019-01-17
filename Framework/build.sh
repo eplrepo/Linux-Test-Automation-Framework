@@ -147,8 +147,8 @@ sync
 fi
 
 #copy the binaries to appropiate directories in host system
-cp -a Binaries /usr/src/
-cp -a release.txt /usr/src/
+cp -a Binaries /usr/src/pi2
+cp -a release.txt /usr/src/pi2
 
 #DElete binaries
 echo "Deleting Binaries Folder..."
