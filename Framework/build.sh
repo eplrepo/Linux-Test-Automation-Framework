@@ -20,12 +20,12 @@ cd Linux-Kernel/Linux
 #make clean
 #cp Rasperri-Pi2-config .config
 #make distclean
-cp test_framework_config .config
-make
+#cp test_framework_config .config
+#make
 #Install Kernel Modules
 echo "Installing Kernel Modules........"
-rm -rf lib/modules
- make INSTALL_MOD_PATH=./ modules_install
+#rm -rf lib/modules
+#make INSTALL_MOD_PATH=./ modules_install
 cd ../../
 
 #Build LTP
