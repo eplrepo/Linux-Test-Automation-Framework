@@ -8,6 +8,6 @@
 
 int main()
 {
-        system("ping 192.168.0.2");
+        system("ping 192.168.0.2 -q");
         return(0);
 }
