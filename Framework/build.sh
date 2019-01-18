@@ -112,9 +112,10 @@ echo "Updating version..."
 #echo "1.0.${ApiVersion}" > release.txt
 #cat release.txt
 
-cat mntpt/usr/version/release.txt
+#cat mntpt/usr/version/release.txt
 rm -rf mntpt/usr/version/*
 cp -a release.txt mntpt/usr/version/
+echo "New Version..."
 cat mntpt/usr/version/release.txt
 
 umount mntpt
