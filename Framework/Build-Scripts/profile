@@ -24,4 +24,4 @@ cd /root/swupg-scripts
 ./ChkForSwUpg.sh
 
 cd /usr/lib/ltp-testsuite/
-./runltp -p -l result.02.log -f Test_Case_Set_1
+./runltp -p -l $(date '+%d-%m-%Y;%T').log -f Test_Case_Set_1

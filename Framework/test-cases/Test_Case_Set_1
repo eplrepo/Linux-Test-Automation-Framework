@@ -3,4 +3,5 @@
 mtest01     mtest01 -p 10
 mmstress    mmstress -x 100
 chdir01     symlink01 -T chdir01
+sensor_test sensor_test i2c-1 0x54
 #----------------------------------------
