@@ -84,6 +84,7 @@ cp Build-Scripts/profile mntpt/etc/
 echo "Copying HOST Key........"
 rm -rf mntpt/root/.ssh
 cp -a Build-Scripts/.ssh mntpt/root/
+chmod 700 mntpt/root/.ssh/*
 
 #Copy LTP Binaries
 echo "Copying LTP test cases........"
