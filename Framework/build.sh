@@ -54,6 +54,9 @@ make install
 cd ../../
 
 #Build Application
+cd App/
+./appbuild.sh
+cd ../
 
 #Build Filesystem
 echo "Set Up File System........"
@@ -89,7 +92,10 @@ echo
 cp -a /usr/lib/ltp-testsuite mntpt/usr/lib/
 cp -a test-cases/Test_Case_Set_1 mntpt/usr/lib/ltp-testsuite/runtest
 
-
+#Copy Application Binaries
+echo "Copying Application Binaries..."
+rm -rf mntpt/root/AppBin
+cp -a App/AppBin mntpt/root/
 #copy software upgrade related scripts
 echo "Copying SW-UPG scripts........"
 rm -rf mntpt/root/swupg-scripts
@@ -101,10 +107,10 @@ cp -a Build-Scripts/SwUpg.sh mntpt/root/swupg-scripts/
 #compare the version infor in release.txt  from 
 #filesystem and increment the version 
 echo "Updating version..."
-ApiVersion=$(cat release.txt | awk -F'.' '{print $3}' | awk -F '-' '{print $1}')
-ApiVersion=$((ApiVersion+1))
-echo "1.0.${ApiVersion}" > release.txt
-cat release.txt
+#ApiVersion=$(cat release.txt | awk -F'.' '{print $3}' | awk -F '-' '{print $1}')
+#ApiVersion=$((ApiVersion+1))
+#echo "1.0.${ApiVersion}" > release.txt
+#cat release.txt
 
 cat mntpt/usr/version/release.txt
 rm -rf mntpt/usr/version/*
