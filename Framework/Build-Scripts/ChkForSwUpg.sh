@@ -8,7 +8,7 @@ if [ -e /tmp/release.txt ]; then
         currver=`cat /usr/version/release.txt`
         newver=`cat /tmp/release.txt`
         if [ $currver == $newver ]; then
-                echo "Same Software"
+                echo "Executing Application..."
         else
                 echo "New Software Available"
                 ./NewBinaries.sh
