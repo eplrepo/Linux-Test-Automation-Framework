@@ -16,7 +16,7 @@ void Create_Process(logicalPid_e id_e);
 
 int main()
 {
-
+	printf("Starting Application Framework.....\n");
 	Create_Process(PRODUCERTASK_ID);
 	Create_Process(CONSUMERTASK_ID);
 	Create_Process(IDLETASKID);
