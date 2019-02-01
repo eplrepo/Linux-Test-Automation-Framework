@@ -21,6 +21,8 @@ done
 
 cat /usr/version/release.txt
 
+sleep 3
+
 #On Every Power ON , check for Software Update
 cd /root/swupg-scripts
 ./ChkForSwUpg.sh
@@ -32,6 +34,8 @@ sleep 3
 cd /usr/lib/ltp-testsuite/
 ./runltp -q -p -l ltptest.log -f Test_Case_Set_1
 sshpass -p "epl@123" scp /usr/lib/ltp-testsuite/results/ltptest.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
+
+sleep 3
 
 #Run Application
 cd /root/AppBin/
@@ -51,6 +55,8 @@ hackbench > hackbench.log
 
 #sshpass -p "epl@123" scp  iozone.log ipcs.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
 sshpass -p "epl@123" scp  iozone.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
+
+sleep 3
 
 cat /usr/version/release.txt
 
