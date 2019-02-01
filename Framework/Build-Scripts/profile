@@ -47,4 +47,5 @@ ipcs > ipcs.log
 hackbench > hackbench.log
 
 sshpass -p "epl@123" scp  iozone.log ipcs.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
+
 ps
