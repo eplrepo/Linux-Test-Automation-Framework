@@ -19,11 +19,14 @@ for i in /etc/profile.d/*.sh ; do
 	unset i
 done
 
+cat /usr/version/release.txt
+
 #On Every Power ON , check for Software Update
 cd /root/swupg-scripts
 ./ChkForSwUpg.sh
 
 sleep 3
+
 
 #Run LTP Test Suite
 cd /usr/lib/ltp-testsuite/
@@ -49,4 +52,4 @@ hackbench > hackbench.log
 #sshpass -p "epl@123" scp  iozone.log ipcs.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
 sshpass -p "epl@123" scp  iozone.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
 
-ps -a
+ps -x
