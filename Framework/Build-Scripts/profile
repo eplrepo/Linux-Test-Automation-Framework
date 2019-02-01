@@ -33,7 +33,7 @@ sshpass -p "epl@123" scp /usr/lib/ltp-testsuite/results/ltptest.log epl@10.144.1
 #Run Application
 cd /root/AppBin/
 ./App &
-ps
+
 top -n 3 > cpuusage.log
 sshpass -p "epl@123" scp cpuusage.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
 
@@ -49,4 +49,4 @@ hackbench > hackbench.log
 #sshpass -p "epl@123" scp  iozone.log ipcs.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
 sshpass -p "epl@123" scp  iozone.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
 
-ps
+ps -a

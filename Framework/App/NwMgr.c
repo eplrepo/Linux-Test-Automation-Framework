@@ -8,6 +8,6 @@
 
 int main()
 {
-        system("ping -i 5 10.144.172.149");
+        system("ping 10.144.172.149 -q");
         return(0);
 }
