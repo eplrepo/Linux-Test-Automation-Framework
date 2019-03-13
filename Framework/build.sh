@@ -24,8 +24,8 @@ cd Linux-Kernel/Linux
 #make
 #Install Kernel Modules
 echo "Installing Kernel Modules........"
-#rm -rf lib/modules
-#make INSTALL_MOD_PATH=./ modules_install
+rm -rf lib/modules
+make INSTALL_MOD_PATH=./ modules_install
 cd ../../
 
 #Build LTP
@@ -50,7 +50,7 @@ make clean
 #the entire LTP again and build
 #make distclean
 make
-make install
+make install prefix=$PWD/ltp-testsuite
 cd ../../
 
 #Build Application
@@ -89,8 +89,7 @@ chmod 700 mntpt/root/.ssh/*
 #Copy LTP Binaries
 echo "Copying LTP test cases........"
 rm -rf mntpt/usr/lib/ltp-testsuite
-echo 
-cp -a /usr/lib/ltp-testsuite mntpt/usr/lib/
+cp -a LTP-Source/ltp-testsuite-20180118/ltp-testsuite mntpt/usr/lib/
 cp -a test-cases/Test_Case_Set_1 mntpt/usr/lib/ltp-testsuite/runtest
 
 #Copy Application Binaries

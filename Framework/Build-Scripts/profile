@@ -33,7 +33,7 @@ sleep 3
 #Run LTP Test Suite
 cd /usr/lib/ltp-testsuite/
 ./runltp -q -p -l ltptest.log -f Test_Case_Set_1
-sshpass -p "epl@123" scp /usr/lib/ltp-testsuite/results/ltptest.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
+sshpass -p "epl@123" scp /usr/lib/ltp-testsuite/results/ltptest.log epl@10.144.172.148:/home/epl/pi2-shared/testlog/
 
 sleep 3
 
@@ -42,7 +42,7 @@ cd /root/AppBin/
 ./App &
 
 top -n 3 > cpuusage.log
-sshpass -p "epl@123" scp cpuusage.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
+sshpass -p "epl@123" scp cpuusage.log epl@10.144.172.148:/home/epl/pi2-shared/testlog/
 
 #Run IOZONE Test
 iozone -i o > iozone.log
@@ -53,8 +53,8 @@ ipcs > ipcs.log
 #Run Hackbench test
 hackbench > hackbench.log
 
-sshpass -p "epl@123" scp  iozone.log ipcs.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
-#sshpass -p "epl@123" scp  iozone.log hackbench.log epl@10.144.172.149:/home/epl/LTIB/LTP_Source/home/epl/LTPbuildroot/pi2/testlog/
+sshpass -p "epl@123" scp  iozone.log ipcs.log hackbench.log epl@10.144.172.148:/home/epl/pi2-shared/testlog/
+#sshpass -p "epl@123" scp  iozone.log hackbench.log epl@10.144.172.148:/home/epl/pi2-shared/testlog/
 
 sleep 3
 
